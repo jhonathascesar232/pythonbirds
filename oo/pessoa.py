@@ -1,4 +1,6 @@
 class Pessoa:
+    olhos = 2 # atributo de classe
+
     def __init__(self, *filhos, nome = None, idade = 35):
         self.nome = nome
         self.idade = idade
