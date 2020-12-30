@@ -7,6 +7,12 @@ class Pessoa:
         self.filhos = list(filhos)
     def comprimentar(self):
         return f'Olá {id(self)}'
+    @staticmethod
+    def metodo_estatico():
+        return 42
+    @classmethod
+    def nomes_e_attr_de_classe(cls):
+        return f'{cls} olhos {cls.olhos}'
 
 
 if __name__ == '__main__':
@@ -17,3 +23,6 @@ if __name__ == '__main__':
     print(c.nome)
     for filho in c.filhos:
         print(f' FILHO: {filho.nome}')
+
+    print(Pessoa.metodo_estatico(), j.metodo_estatico())
+    print(Pessoa.nomes_e_attr_de_classe(), j.nomes_e_attr_de_classe())
