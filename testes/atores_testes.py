@@ -159,6 +159,7 @@ class PorcoTestes(TestCase):
     Esperado '@' como caracter de porco ativo e '+' como caracter de porco destruido
     """
     def teste_status(self):
+        'Testa o status do porco de da colisao'
         porco = Porco()
         self.assertEqual('@', porco.caracter())
         outro_ator_na_mesma_posicao = Ator()
